@@ -27,7 +27,12 @@ To address these issues, this study proposes a computationally efficient and low
 **Rain100H ./experiments/Rain100H**  
 
 # Results
-##FLOPs & Parameters & Layer analysis
+## FLOPs & Parameters & Layer analysis
 <p align="center">
   <img src="./FLOPs.jpg" height="600px">
+</p>
+
+## PSNR & SSIM analysis
+<p align="center">
+  <img src="./data_analysis.jpg" height="600px">
 </p>
