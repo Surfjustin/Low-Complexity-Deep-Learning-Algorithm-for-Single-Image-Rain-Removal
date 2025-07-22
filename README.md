@@ -10,3 +10,13 @@ To address these issues, this study proposes a computationally efficient and low
 <p align="center">
   <img src="./RWW.jpg" height="400px">
 </p>
+
+# Dataset
+## Synthetic Datasets
+| Datasets | #train | #test | label |
+   | :------- | -----: | ----: | :-----: |
+   | [Rain12]|-| 12   |-|
+   | [Rain100L]| 200    | 100   | -|
+   | [Rain100H]| 1800   | 100   | -|
+   | [Rain1200]| 12000  | 1200  | -|
+   | [Rain1400]| 12600  | 1400  | - |
