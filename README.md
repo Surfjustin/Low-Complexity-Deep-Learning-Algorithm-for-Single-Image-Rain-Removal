@@ -36,3 +36,10 @@ To address these issues, this study proposes a computationally efficient and low
 <p align="center">
   <img src="./data_analysis.jpg" height="600px">
 </p>
+
+## Subjective analysis
+<p align="center">
+  <img src="./light_rain.jpg" height="600px">
+  <img src="./medium_rain.jpg" height="600px">
+  <img src="./heavy_rain.jpg" height="600px">
+</p>
