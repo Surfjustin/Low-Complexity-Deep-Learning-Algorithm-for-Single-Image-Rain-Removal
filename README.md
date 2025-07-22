@@ -8,7 +8,7 @@ In addition, UAV are increasingly used in rescue operations, offering rapid sear
 To address these issues, this study proposes a computationally efficient and low-complexity image deraining model, composed of three modules: the Rain Streak Extractor (RSE), the Rain Streak Denoiser (RSD), and the Efficient Restored-Feature Block (ERB). Experimental results show that compared with recent image deraining methods, the proposed model significantly reduces computational cost, parameter count, and network depth, achieving up to 4T reduction in computation. Moreover, the proposed method maintains competitive visual quality in deraining performance.
 
 <p align="center">
-  <img src="./RWW.jpg" height="400px">
+  <img src="./RWW.jpg" height="600px">
 </p>
 
 # Dataset
@@ -25,3 +25,9 @@ To address these issues, this study proposes a computationally efficient and low
 **Use NVIDIA GeForce GTX3090**  
 **Rain100L & Rain12 ./experiments/Rain100L**  
 **Rain100H ./experiments/Rain100H**  
+
+# Results
+##FLOPs & Parameters & Layer analysis
+<p align="center">
+  <img src="./FLOPs.jpg" height="600px">
+</p>
