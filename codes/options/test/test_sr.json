@@ -1,0 +1,39 @@
+{
+"name": "rain12_model25_channel_rde_11111"
+  , "suffix": null
+  , "model": "sr"
+  , "scale": 1
+  , "gpu_ids": [0]
+
+  , "datasets": {
+    "test_1": { 
+      "name": "my-real"
+      , "mode": "LR"
+      , "dataroot_LR": "/home/mg70912/Desktop/CODE-Net/datasets/my-real"
+    },
+    "test_2": { 
+      "name": "Rain12"
+      , "mode": "LRHR"
+      , "dataroot_LR": "/home/mg70912/Desktop/CODE-Net/datasets/Rain12/input"
+      , "dataroot_HR": "/home/mg70912/Desktop/CODE-Net/datasets/Rain12/gt"
+    }
+}
+
+  , "path": {
+    "root": "/home/mg70912/Desktop/CODE-Net"
+    , "pretrain_model_G": "/home/mg70912/Desktop/CODE-Net/pretrained/CODENET-rain12.pth"
+  }
+
+  , "network_G": {
+  "which_model_G": "rlcsc_net" 
+    , "norm_type": null
+    , "mode": "CNA"
+    , "nf": 64
+    , "nb": 23
+    , "in_nc": 3
+    , "out_nc": 3
+
+    , "gc": 32
+    , "group": 1
+  }
+}

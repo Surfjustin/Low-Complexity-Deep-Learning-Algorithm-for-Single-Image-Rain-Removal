@@ -1,0 +1,66 @@
+{
+  "name": "CODE-Net_model5_notpool_RWC_14channel_ECA_raintrainH_testmulti"
+  , "use_tb_logger": null
+  , "model":"sr"
+  , "scale": 1
+  , "gpu_ids": [0]
+
+  , "datasets": {
+    "train": {
+      "name": "RainTrainH"
+      , "mode": "LRHR"
+      , "dataroot_HR": "/home/mg70912/Desktop/CODE-Net/datasets/RainTrainH/norain"
+      , "dataroot_LR": "/home/mg70912/Desktop/CODE-Net/datasets/RainTrainH/raain"
+      , "subset_file": null
+      , "use_shuffle": true
+      , "n_workers": 8
+      , "batch_size": 16
+      , "HR_size": 196
+      , "use_flip": true
+      , "use_rot": true
+    }
+    , "val": {
+      "name": "Rain100H"
+      , "mode": "LRHR"
+      , "dataroot_HR": "/home/mg70912/Desktop/CODE-Net/datasets/Rain100H/noraain"
+      , "dataroot_LR": "/home/mg70912/Desktop/CODE-Net/datasets/Rain100H/rain"
+    }
+  }
+
+  , "path": {
+    "root": "/home/mg70912/Desktop/CODE-Net"
+    , "resume_state":  null
+    , "pretrain_model_G": "/home/mg70912/Desktop/CODE-Net/experiments/CODE-Net_model5_notpool_RWC_14channel_ECA_raintrainH_25.194/models/219000_G.pth"
+  }
+
+  , "network_G": {
+    "which_model_G": "rlcsc_net" 
+    , "norm_type": null
+    , "mode": "CNA"
+    , "nf": 64
+    , "nb": 23
+    , "in_nc": 3
+    , "out_nc": 3
+    , "gc": 32
+    , "group": 1
+  }
+
+  , "train": {
+    "lr_G": 1e-3
+    , "lr_scheme": "MultiStepLR"
+    , "lr_steps": [100000,150000,200000,250000,300000,350000,400000]
+    , "lr_gamma": 0.6
+
+    , "pixel_criterion": "l2"
+    , "pixel_weight": 1.5
+    , "val_freq": 1000
+
+    , "manual_seed": 0
+    , "niter": 400000
+  }
+
+  , "logger": {
+    "print_freq": 500
+    , "save_checkpoint_freq": 1000
+  }
+}
