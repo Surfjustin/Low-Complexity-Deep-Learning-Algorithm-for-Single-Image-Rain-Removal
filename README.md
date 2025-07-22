@@ -20,3 +20,8 @@ To address these issues, this study proposes a computationally efficient and low
    | Rain100H| 1800   | 100   | -|
    | Rain1200| 12000  | 1200  | -|
    | Rain1400| 12600  | 1400  | - |
+   
+# Pre-trained Model
+**Use NVIDIA GeForce GTX3090:**
+**Rain100L & Rain12 ./experiments/Rain100L**
+**Rain100H ./experiments/Rain100H**
