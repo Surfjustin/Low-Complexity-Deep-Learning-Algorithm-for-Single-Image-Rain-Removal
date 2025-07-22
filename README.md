@@ -39,7 +39,10 @@ To address these issues, this study proposes a computationally efficient and low
 
 ## Subjective analysis
 <p align="center">
-  <img src="./light_rain.jpg" height="600px">
-  <img src="./medium_rain.jpg" height="600px">
-  <img src="./heavy_rain.jpg" height="600px">
+  <img src="./light_rain.jpg" height="600px"><br>
+  <b>Light Rain</b><br><br>
+  <img src="./medium_rain.jpg" height="600px"><br>
+  <b>Medium Rain</b><br><br>
+  <img src="./heavy_rain.jpg" height="600px"><br>
+  <b>Heavy Rain</b>
 </p>
