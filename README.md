@@ -53,3 +53,10 @@ This study focuses on rain image processing and proposes a single-image derainin
 In terms of model performance, the proposed method consistently achieves stable results on benchmark datasets such as Rain12, Rain100L, and Rain100H. Notably, it maintains a PSNR above 26 dB and an SSIM over 0.83 even under heavy rain conditions, indicating its robust capability to restore clear images in high-rainfall scenarios. Moreover, the entire model consists of only 32 layers, approximately 101K parameters, and 73.7 GFLOPs, significantly reducing resource consumption while preserving high visual quality. Compared to existing large-scale models like CODE-Net, this model achieves a 70% to 90% reduction in FLOPs (saving 200G to 4T) and a 40% to 90% reduction in parameter count (saving 68K to 1.25M), demonstrating high resource efficiency and potential for hardware deployment.
 
 In summary, the proposed low-complexity single-image deraining algorithm balances deraining effectiveness with hardware friendliness. It effectively enhances environmental perception for autonomous vehicles in adverse weather conditions and holds great promise for future applications in image preprocessing and embedded systems.
+
+# References
+[1]D. Ren, W. Zuo, Q. Hu, P. Zhu and D. Meng, "Progressive Image Deraining Networks: A Better and Simpler Baseline," 2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), Long Beach, CA, USA, 2019, pp. 3932-3941.
+
+[2]D. Ren, W. Shang, P. Zhu, Q. Hu, D. Meng and W. Zuo, "Single Image Deraining Using Bilateral Recurrent Network," in IEEE Transactions on Image Processing, vol. 29, pp. 6852-6863, 2020.
+
+[4]L. Yu, B. Wang, J. He, G. -S. Xia and W. Yang, "Single Image Deraining With Continuous Rain Density Estimation," in IEEE Transactions on Multimedia, vol. 25, pp. 443-456, 2023.
